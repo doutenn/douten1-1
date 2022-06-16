@@ -26,7 +26,28 @@ const main = () => {
         resetButton.onclick = function() {
           reset();
         };
-      };
+        //描画開始
+        ctx.beginPath();
+        //円
+        ctx.arc(650, 400, 7, 0, Math.PI*2, false)
+        ctx.fill();
+ 
+        //三角形
+        ctx.moveTo(650, 400);
+        ctx.lineTo(150, 400);
+        ctx.lineTo(650, 100);
+        ctx.fill();
+
+        ctx.font = "32px serif";
+        ctx.fillText("B",120,410);
+        ctx.fillText("A",660,110);
+        ctx.fillText("C",660,410);
+
+        // 開始地点に戻って線を閉じる
+        ctx.closePath();
+        // 塗りつぶしを実行
+        ctx.stroke();
+    };
    
     function draw(){
       if(y >= 100){
