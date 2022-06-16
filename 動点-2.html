@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>問題2</title>
+    <link rel="stylesheet" href="stylesheet.css">
+
+  </head>
+  <body>
+    <header>
+      <div class="hamburger-menu">
+          <input type="checkbox" id="menu-btn-check">
+          <label for="menu-btn-check" class="menu-btn"><span></span></label>
+          <!--ここからメニュー-->
+          <div class="menu-content">
+            <ul>
+              <li><a href="index.html">トップページ</a></li>
+              <ul>
+                <p>動点問題</p>
+                <li><a href="動点-1.html">問題１</a></li>
+                <li><a href="動点-2.html">問題２</a></li>
+                <li><a href="動点-3.html">問題３</a></li>
+                <li><a href="動点-4.html">問題４</a></li>
+                <li><a href="動点-5.html">問題５</a></li>
+                <li><a href="振り返り.html">振り返り</a></li>
+              </ul>
+              <ul>
+                <p></p>
+                <li><a href="先生用.html">先生用図形</a></li>
+              </ul>
+              <ul>
+                <p></p>
+                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdpD_GvlOBEfDz9gb0tQYaRSc2HIW0MpwtMyWzy6W2gYMKzPg/viewform?usp=sf_link">評価アンケート</a></li>
+              </ul>              
+            </ul>
+          </div>
+          <!--ここまでメニュー-->
+      </div>
+  </header>
+    <div class="main">
+      <div class="copy-container">
+        <h1>動点問題<span>1</span></h1>
+      </div>
+      <center><canvas
+        id="canvas"
+        width="800"
+        height="480"
+        style = "      
+          border: solid 1px #000000;
+          box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+          border-radius: 3px;"
+      ></canvas>
+      <script src="c-a.js"></script>
+      <p id="time"></p>
+      <button id="start">スタート</button>
+    
+      <button id="reset">リセット</button></center>
+      <div class="contents">
+        <h3>縦が6㎝、横が10㎝の三角形ABCの周上を点Pは毎秒1㎝の速さで、BからCを通ってAまで動きます。△PADの面積は、どのように変化するでしょうか。以下の問題を解いてみてください。</h3>
+        <center><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdDXmHoI8IWn30FQ8MD6P-cqsGNH2vEUyULVApIWqx2JjO0Pw/viewform?embedded=true" width="640" height="884" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe></center>
+        <p class="mb8"></p>
+        <a href="#" id="page-top"></i>トップへ戻る</a>
+      </div>
+      <div class="footer">
+        <div class="footer-logo">動点問題</div>
+        <div class="footer-list">
+          <ul>
+            <li><a href="index.html">トップページ</a></li>
+            <li><a href="先生用.html">先生用</a></li>
+            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdpD_GvlOBEfDz9gb0tQYaRSc2HIW0MpwtMyWzy6W2gYMKzPg/viewform?usp=sf_link">評価アンケート</a></li>
+          </ul>
+        </div>
+      </div>
+  </body>
+</html>
