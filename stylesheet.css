@@ -1,0 +1,234 @@
+html {
+  font-size: 100%;
+}
+.menu-btn {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  height: 60px;
+  width: 60px;
+  justify-content: center;
+  align-items: center;
+  z-index: 90;
+  background-color: #3584bb;
+}
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 25px;
+  border-radius: 3px;
+  background-color: #ffffff;
+  position: absolute;
+}
+.menu-btn span:before {
+  bottom: 8px;
+}
+.menu-btn span:after {
+  top: 8px;
+}
+
+#menu-btn-check:checked ~ .menu-btn span {
+    background-color: rgba(255, 255, 255, 0);/*メニューオープン時は真ん中の線を透明にする*/
+}
+#menu-btn-check:checked ~ .menu-btn span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+}
+#menu-btn-check:checked ~ .menu-btn span::after {
+    top: 0;
+    transform: rotate(-45deg);
+}
+#menu-btn-check {
+    display: none;
+}
+
+.bl_hamburgerMenu_list li + li {
+  margin-top: 20px;
+}
+.menu-content {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 80;
+  background-color: #3584bb;
+}
+.menu-content ul {
+  padding: 50px 10px 0;
+}
+.menu-content ul li {
+  border-bottom: solid 1px #ffffff;
+  list-style: none;
+}
+.menu-content ul li a {
+  display: block;
+  width: 100%;
+  font-size: 18px;
+  box-sizing: border-box;
+  color:#ffffff;
+  text-decoration: none;
+  padding: 9px 15px 10px 0;
+  position: relative;
+}
+.menu-content ul li a::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-top: solid 2px #ffffff;
+  border-right: solid 2px #ffffff;
+  transform: rotate(45deg);
+  position: absolute;
+  right: 11px;
+  top: 16px;
+}
+
+.menu-content {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 100%;/*leftの値を変更してメニューを画面外へ*/
+  z-index: 80;
+  background-color: #3584bb;
+  transition: all 0.5s;/*アニメーション設定*/
+  color:#fff
+}
+#menu-btn-check:checked ~ .menu-content {
+  left: 0;/*メニューを画面内へ*/
+}
+
+body {
+    font-family: "cursive";
+  }
+  .div {
+    width: 500px;
+    margin: 100px auto 0 auto;
+    text-align: center;
+ }
+ .div {
+  font-family: "cursive";
+  font-size: 14px;
+}
+
+  a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+  }
+  li {
+    list-style: none;
+  }
+
+
+  .header-list li {
+    float: left;
+    padding: 33px 20px;
+  }
+  .fa-bars {
+    font-size: 45px;
+    margin: 18px 40px 18px 0;
+  }
+  .main {
+    padding: 30px 50px;
+    background-color: #cdfac434;
+  }
+  
+  .copy-container h1 {
+    font-size: 100px;
+  }
+  
+  .copy-container h2 {
+    font-size: 60px;
+  }
+  
+  .copy-container span {
+    color: #ff4a4a;
+  }
+  
+  .contents {
+    height: 800px;
+
+    margin-top:100px;
+  
+    color:#0d1e2b
+  }
+  .contents h4 {
+    font-size:20px;
+  }
+  .contents h5 {
+    font-size:20px;
+  }
+  p.mb8 {
+    margin-bottom: 6em;
+  }
+
+  .section-title {
+    border-bottom: 2px solid #a8dcf7;
+
+    font-size:28px;
+
+    padding-bottom:15px;
+    
+    margin-bottom:50px;  
+  }
+  .img{
+    width:500px;
+    height:300px;
+  }
+  .btn {
+    border-radius: 5px;
+    background-color: lightblue;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+  }  
+  .contents span{
+    color:#ff4a4a
+  }
+  .contents u{
+    color:#040a06
+  }
+  .contents-item span{
+      color:#ff3c3c
+  }
+  .contents-item {
+    float: left;
+
+    margin-right:40px;
+    
+  }
+
+  .contents-item p{
+    font-size:24px;
+    margin-top:30px;
+  
+  }
+  
+  .footer {
+    background-color: #bde3f8af;
+    color: #fff;
+    height: 120px;
+    padding: 40px;
+  }
+  
+  .footer-logo {
+    float: left;
+    font-size: 32px;
+  }
+  
+  .footer-list {
+    float: right;
+    color: #fff;
+  }
+  
+  .footer-list li {
+    padding-bottom: 20px;
+    color:#fff;
+  }
+  .footer-list a{
+    color:#fff;
+  }
