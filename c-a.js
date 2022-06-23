@@ -42,6 +42,7 @@ const main = () => {
         ctx.fillText("B",120,410);
         ctx.fillText("A",660,110);
         ctx.fillText("C",660,410);
+        ctx.fillText("P",690,y+10);
 
         // 開始地点に戻って線を閉じる
         ctx.closePath();
@@ -59,6 +60,8 @@ const main = () => {
        //円
        ctx.arc(650, y, 7, 0, Math.PI*2, false)
        ctx.fill();
+       ctx.font = "32px serif";
+        ctx.fillText("P",690,y+10);
    
        //三角形
        ctx.moveTo(650, y);
@@ -112,6 +115,7 @@ const main = () => {
        ctx.fillText("B",120,410);
        ctx.fillText("A",660,110);
        ctx.fillText("C",660,410);
+       ctx.fillText("P",690,y+10);
 
        // 開始地点に戻って線を閉じる
        ctx.closePath();
