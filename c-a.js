@@ -43,6 +43,8 @@ const main = () => {
         ctx.fillText("A",660,110);
         ctx.fillText("C",660,410);
         ctx.fillText("P",690,y+10);
+        ctx.fillText("6cm",660,260);
+        ctx.fillText("10cm",380,440);
 
         // 開始地点に戻って線を閉じる
         ctx.closePath();
@@ -84,6 +86,8 @@ const main = () => {
        ctx.fillText("B",120,410);
        ctx.fillText("A",660,110);
        ctx.fillText("C",660,410);
+       ctx.fillText("6cm",660,260);
+        ctx.fillText("10cm",380,440);
    
        // 開始地点に戻って線を閉じる
        ctx.closePath();
@@ -116,6 +120,8 @@ const main = () => {
        ctx.fillText("A",660,110);
        ctx.fillText("C",660,410);
        ctx.fillText("P",690,y+10);
+       ctx.fillText("6cm",660,260);
+        ctx.fillText("10cm",380,440);
 
        // 開始地点に戻って線を閉じる
        ctx.closePath();
